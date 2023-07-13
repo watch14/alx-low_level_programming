@@ -4,7 +4,7 @@
  *main
  *print and that...
  *return 1
- * */
+ */
 
 int main(void)
 {
