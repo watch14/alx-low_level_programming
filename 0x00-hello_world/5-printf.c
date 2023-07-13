@@ -1,10 +1,8 @@
 #include <stdio.h>
 /**
- * main - display
+ * main - prints with proper grammar, but the outcome is a piece of art,
  *
- * with proper grammar, but the outcome is a piece of art
- *
- * Return 0 
+ * Return: 0 indicate success.
  */
 int main(void)
 {
