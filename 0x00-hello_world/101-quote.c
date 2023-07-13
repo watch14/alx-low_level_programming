@@ -9,8 +9,8 @@
 int main(void)
 {
 
-	print("and that piece of art is useful\" - Dora Korpar, 2015-10-19");
-	print("\n");
+	write("and that piece of art is useful\" - Dora Korpar, 2015-10-19");
+	write("\n");
 
 	return (1);
 
