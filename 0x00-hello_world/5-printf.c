@@ -1,6 +1,9 @@
 #include <stdio.h>
 /**
- * main -display with proper grammar, but the outcome is a piece of art,
+ * main - display
+ *
+ * with proper grammar, but the outcome is a piece of art
+ *
  * Return 0 
  */
 int main(void)
