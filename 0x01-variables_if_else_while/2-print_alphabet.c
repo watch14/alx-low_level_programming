@@ -1,11 +1,12 @@
 #include <stdio.h>
 
-int main()
+int main(void)
 {
 	char a = 'a';
-	while (a <= 'z'){
+	while (a <= 'z')
+	{
 		putchar(a);
 		a++;
 	}
-return (0);
+	return (0);
 }
