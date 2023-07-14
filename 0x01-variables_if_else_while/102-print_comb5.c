@@ -14,8 +14,6 @@ int main(void)
 		{
 			putchar (a);
 			putchar (b);
-			if (a == '7' && b == '8' && c == '9')
-				break;
 			putchar (' ');
 			putchar (a);
                         putchar (b);
