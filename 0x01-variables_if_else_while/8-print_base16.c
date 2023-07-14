@@ -6,13 +6,13 @@
  */
 int main(void)
 {
-	int i;
+	int i = '0';
+
 	for(; i <= 102 ; i++)
 	{
 		putchar(i);
 		if (i == 57)
 			i = i + 39;
-		i++;
 	}
 	return (0);
 }
