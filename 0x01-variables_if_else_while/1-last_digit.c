@@ -16,17 +16,12 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 
-	printf("Lats digit of %d ",n);
+	printf("Lats digit of %d ", n);
 	if (n > 5)
-	{
 	printf("is %d and is greater than 5", n % 10);
-	}
 	else if (n == 0)
-	{
 		printf("is %d and is 0 ",n % 10);
-	}
-	else{
+	else
 		printf("is %d and is less than 6 and not 0 ", n % 10);
-	}
 	return (0);
 }
