@@ -3,7 +3,7 @@
 int main()
 {
 	char a = 'a';
-	while (a = 'z'){
+	while (a <= 'z'){
 		putchar(a);
 		a++;
 	}
