@@ -12,6 +12,8 @@ int main(void)
 	{
 		for (b = 0 ; b < 100 ; b++)
 		{
+			if ( a != b )
+			{
 			putchar ((a / 10) + '0');
 			putchar ((a % 10) + '0');
 			putchar (' ');
@@ -21,8 +23,10 @@ int main(void)
 				break;
 			putchar (',');
 			putchar (' ');
+			}
+		b++;	
 		}
-
+		a++;
 	}
 	putchar ('\n');
 	return (0);
