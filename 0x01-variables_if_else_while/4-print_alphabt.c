@@ -6,7 +6,8 @@
  */
 int main(void)
 {
-	for(int a = 'a'; a <= 'z'; a++)
+	int a = 'a';
+	for(; a <= 'z'; a++)
 	{
 		if (a != 'e' && a != 'q')
 			putchar(a);
