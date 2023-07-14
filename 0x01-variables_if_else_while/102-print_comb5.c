@@ -4,7 +4,8 @@
  *
  * Return: 0 indicate success.
  */
-int main(void){
+int main(void)
+{
 	int i, j;
 
 	for (i = 0; i < 100; i++)
