@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-	for(int a = 'a' ; a <= 'z' ; a++)
+	for(int a = 'a'; a <= 'z'; a++)
 	{
 		putchar(a);
-		while(;a == 101 || a == 113)
+		while(a == 101 || a == 113)
 			a++;
 	}
 	putchar('\n');
