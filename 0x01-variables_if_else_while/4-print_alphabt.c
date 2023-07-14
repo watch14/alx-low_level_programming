@@ -8,9 +8,8 @@ int main(void)
 {
 	for(int a = 'a'; a <= 'z'; a++)
 	{
-		putchar(a);
-		while(a == 101 || a == 113)
-			a++;
+		if (a != 'e' && a != 'q')
+			putchar(a);
 	}
 	putchar('\n');
 	return (0);
