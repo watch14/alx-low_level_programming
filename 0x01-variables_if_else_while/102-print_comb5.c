@@ -18,7 +18,7 @@ int main(void)
 			putchar ((a / 10) + 48); 
 			putchar ((b / 10) + 48);
 			if (a == 98 && b == 99)
-				break
+				break;
 			putchar (',');
 			putchar (' ');
 		}
