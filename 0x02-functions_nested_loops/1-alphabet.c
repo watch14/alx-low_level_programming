@@ -2,14 +2,13 @@
 #include "main.h"
 
 /**
- * main - Entry point.
+ * main - check the code
  *
- * Return: 0 indicate success.
+ * Return: Always 0.
  */
-
 
 int main(void)
 {
-	print_alphabet ();
+	print_alphabet();
 	return (0);
 }
