@@ -1,16 +1,15 @@
 #include <stdio.h>
 #include "main.h"
-/**
- * main - check the code
+ /**
+ * add - Adds two integers.
+ * @a: The first integer.
+ * @b: The second integer.
  *
- * Return: Always 0.
+ * Return: The sum of the two integers.
  */
-
-
 
 int add(int a, int b)
 {
 	int r = a + b;
-	
 	return (r);
 }
