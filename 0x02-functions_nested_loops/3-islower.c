@@ -2,13 +2,10 @@
 #include "main.h"
 
 
-int _islower()
+int _islower(int c)
 {
-	int c;
-
 	if (c < 'a' || c > 'z')
-		printf("1");
+		return (1);
 	else
-		printf("0");
-	return (0);
+		return (0);
 }
