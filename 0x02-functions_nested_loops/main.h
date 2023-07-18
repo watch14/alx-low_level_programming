@@ -2,10 +2,9 @@
 #define MAIN_H
 #include <stdio.h>
 
-int _putchar(void)
+int _putchar(char c)
 {
 	printf("_putchar");
-	return(0);
 }
 
 #endif
