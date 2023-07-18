@@ -9,15 +9,25 @@ void times_table(void)
 		for(b = 0 ; b <= 9 ; b++ )
 		{
 			r = a * b;
-			_putchar ((r / 10) + '0');
-			_putchar ((r % 10) + '0');
-			if (b == 9)
-				break;
-			_putchar (',');
-			_putchar (' ');
-			_putchar (' ');
+
+			if (r < 10)
+			{
+				_putchar (' ');
+				_putchar ((r % 10) + '0');
+				}
+			else
+			{
+				_putchar ((r / 10) + '0');
+				_putchar ((r % 10) + '0');
+			}
 		}
 		_putchar ('\n');
-	}
+				
 
+		if(b == 9)
+			break;
+		_putchar(',');
+		_putchar(' ');
+		_putchar(' ');
+	}
 }
