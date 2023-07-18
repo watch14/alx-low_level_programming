@@ -1,25 +1,22 @@
-#include "main.h"
 #include <stdio.h>
-
+#include "main.h"
+/**
+ * jack_bauer - Prints every minute of the day of Jack Bauer
+ */
 void jack_bauer(void)
 {
-	int h ,m;
+	int hour, minute;
 
-	for (h = '0' ; h <= '9' ; h++)
-		pucthar(h);
-		 for (h = '0' ; h <= '9' ; h++)
-		 {
-			 {
-				 pucthar(h);
-				 for (m = '0' ; m <= '9' ; m++)
-				 {
-					 putchar(m);
-					 for (m = '0' ; m <= '9' ; m++)
-					 {
-						 putchar(m);
-					 }
-				 }
-			 }
-		 }
-
+	for (hour = 0; hour < 24; hour++)
+	{
+		for (minute = 0; minute < 60; minute++)
+		{
+			_putchar((hour / 10) + '0');
+			_putchar((hour % 10) + '0');
+			_putchar(':');
+			_putchar((minute / 10) + '0');
+			_putchar((minute % 10) + '0');
+			_putchar('\n');
+		}
+	}
 }
