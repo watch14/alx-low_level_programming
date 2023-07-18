@@ -5,6 +5,10 @@
  *
  * Return: 0 indicate success.
  */
+int _putchar()
+{
+	printf("_puctchar\n");
+}
 
 int main(void)
 {
