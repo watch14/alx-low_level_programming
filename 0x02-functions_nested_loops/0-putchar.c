@@ -1,18 +1,13 @@
 #include <stdio.h>
-
+#include <main.h>
 /**
  * main - Entry point.
  *
  * Return: 0 indicate success.
  */
-int _putchar()
-{
-	printf("_putchar\n");
-	return (0);
-}
 
 int main(void)
 {
-	_putchar();
+	_putchar('_');
 	return (0);
 }
