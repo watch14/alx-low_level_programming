@@ -3,24 +3,21 @@
 
 void times_table(void)
 {
-	int i = 0;
-	while(i <= 10)
+	int a, b, r;
+	for(a = 0 ; a <= 9 ; a++)
 	{
-		n = '0';
-		_putchar(n);
-		_putchar(',');
-		_putchar(' ');
-		_putchar(' ');
-		_putchar('\n');
-	} 
-	while(i <= 10)
-        {
-                n = '0' + '1';
-                _putchar(n);
-                _putchar(',');
-                _putchar(' ');
-                _putchar(' ');
-		_putchar('\n');
-        }
+		for(b = 0 ; b <= 9 ; b++ )
+		{
+			r = a * b;
+			_putchar ((r / 10) + '0');
+			_putchar ((r % 10) + '0');
+			if (b == 9)
+				break;
+			_putchar (',');
+			_putchar (' ');
+			_putchar (' ');
+		}
+		_putchar ('\n');
+	}
 
 }
