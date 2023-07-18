@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stfio.h>
+#include <stdio.h>
 /**
  * _isalpha - Checks if a character is an alphabetic letter.
  *
