@@ -1,15 +1,11 @@
 #include <stdio.h>
 #include "main.h"
+#include "main.c"
 /**
  * main - Entry point.
  *
  * Return: 0 indicate success.
  */
-int _putchar()
-{
-	printf("_puctchar\n");
-	return(0);
-}
 
 int main(void)
 {
