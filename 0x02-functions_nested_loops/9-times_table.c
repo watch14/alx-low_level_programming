@@ -22,9 +22,9 @@ void times_table(void)
 			}
 			if (b == 9)
 				break;
-			putchar (',');
-			putchar (' ');
-			putchar (' ');
+			_putchar (',');
+			_putchar (' ');
+			_putchar (' ');
 		}
 		_putchar ('\n');
 	}
