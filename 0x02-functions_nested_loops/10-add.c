@@ -6,6 +6,7 @@
  * Return: Always 0.
  */
 
+
 int add(int a, int b)
 {
 	int r = a + b;
