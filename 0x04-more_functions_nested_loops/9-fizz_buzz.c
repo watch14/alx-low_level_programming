@@ -1,4 +1,4 @@
-#include <stfio.h>
+#include <stdio.h>
 
 /**
  * main - Prints numbers from 1 to 100 with special conditions.
