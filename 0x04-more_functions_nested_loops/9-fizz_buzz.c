@@ -4,9 +4,11 @@
  * main - Prints numbers from 1 to 100 with special conditions.
  * For multiples of three, prints "Fizz".
  * For multiples of five, prints "Buzz".
- * For multiples of three and five, prints "FizzBuzz".
+ * For multiples of both three and five, prints "FizzBuzz".
+ * Each number or word is separated by a space.
  * Return: Always 0
  */
+
 int main(void)
 {
 	int i;
