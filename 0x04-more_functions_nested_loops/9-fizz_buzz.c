@@ -4,8 +4,7 @@
  * main - Prints numbers from 1 to 100 with special conditions.
  * For multiples of three, prints "Fizz".
  * For multiples of five, prints "Buzz".
- * For multiples of both three and five, prints "FizzBuzz".
- * Each number or word is separated by a space.
+ * For multiples of three and five, prints "FizzBuzz".
  * Return: Always 0
  */
 
