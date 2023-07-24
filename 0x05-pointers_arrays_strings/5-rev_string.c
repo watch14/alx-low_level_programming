@@ -6,7 +6,6 @@
  *
  * @s: The string to be reversed.
  */
-
 void rev_string(char *s)
 {
 	int len = strlen(s), i, j = 0;
