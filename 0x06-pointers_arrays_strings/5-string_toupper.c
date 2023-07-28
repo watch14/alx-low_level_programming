@@ -7,12 +7,12 @@
  */
 char *string_toupper(char *str)
 {
-	int i;
-	int len = strlen(str);
+	char *i = str;
 
-	for (i = 0 ; i < len ; i++)
+	while (*i != '\0')
 	{
-		str[i] = toupper(str[i]);
+		*i = toupper(*i);
+		i++;
 	}
 	return (str);
 }
