@@ -1,0 +1,19 @@
+#include "main.h"
+
+/**
+ * print_diagsums - Print the sum of the two diagonals of a square matrix.
+ * @a: Pointer to the 2D array representing the square matrix.
+ * @size: The size of the square matrix.
+ */
+
+void print_diagsums(int *a, int size)
+{
+	int j, ds1 = 0, ds2 = 0;
+
+	for (j = 0 ; j < size ; j++)
+	{
+		ds1 = ds1 + a[i][i];
+		ds2 = ds2 + a[i][size - 1 - i];
+	}
+	printf ("%d, %d\n", ds1, ds2);
+}
