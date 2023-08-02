@@ -16,6 +16,12 @@ int squrareroot(int a, int b)
 		return (-1);
 	return (squrareroot(a, b + 1));
 }
+/**
+ * _sqrt_recursion - Calculates the square root of a number using recursion.
+ * @n: The number for which to calculate the square root.
+ *
+ * Return: The square root of 'n' if it is a perfect square, or -1 otherwise.
+ */
 int _sqrt_recursion(int n)
 {
 	return (squrareroot(n, 1));
