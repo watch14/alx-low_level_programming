@@ -7,7 +7,7 @@
  *
  * Return: 1 if 'n' is a prime number, 0 otherwise.
  */
-int is_prime_helper(int n, int divisor) {.
+int is_prime_helper(int n, int divisor) {
 	if (divisor * divisor > n) {
 		return 1;
 	}
