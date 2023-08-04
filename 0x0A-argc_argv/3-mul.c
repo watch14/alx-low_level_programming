@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
 * main - print product of argument numbers
 * @argc: argument counter
