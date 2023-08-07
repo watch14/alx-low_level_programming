@@ -9,11 +9,9 @@
 
 char *_strdup(char *str)
 {
-	if (str == 0)
-		return (NULL);
 	char *a = strdup(str);
 
-	if (a == 0)
+	if (str == 0 || a == 0)
 		return (NULL);
 	return (a);
 	free(a);
