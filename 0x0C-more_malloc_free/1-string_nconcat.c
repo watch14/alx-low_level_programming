@@ -19,9 +19,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 	/*to calculate the lenghth of the strings*/
-	for (l1 = 0 ; s1[l1] != \0 ; l1++)
+	for (l1 = 0 ; s1[l1] != '\0' ; l1++)
 		;
-	for (l2 = 0 ; s2[l2] != \0 ; l2++)
+	for (l2 = 0 ; s2[l2] != '\0' ; l2++)
 		;
 	if (l2 < n)
 		return (0);
