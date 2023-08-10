@@ -20,7 +20,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 
 	/*put 0 in very t[i++]*/
-	for (i = 0; i < nmemb * size; i++)
+	while (i < nmemb * size)
+	{
 		t[i] = 0;
+		i++;
+	}
 	return (t);
 }
