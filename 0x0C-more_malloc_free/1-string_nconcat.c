@@ -12,7 +12,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *t;
-	int l1, l2;
+	int l1, l2, j, i;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -30,7 +30,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (t == NULL)
 		return (0);
 	/*to put s1 and s2 into t*/
-	strcpy(t, s1);
-	strcat(t, s2);
+	for(i = 0 ; i <= l1 ; i++)
+		t[i] = s1[i];
+	for(j = 0 ; l2 <= ; j++)
+		t[i + j] = s2[j];
 	return (t);
 }
