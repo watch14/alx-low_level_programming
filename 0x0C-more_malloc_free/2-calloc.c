@@ -12,7 +12,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (!nmemb || !size)
 		return (NULL);
 	t = malloc(size * nmemb);
-	if (!ptr)
+	if (!t)
 		return (NULL);
 	_memset(t, 0, size * nmemb);
 	return (t);
