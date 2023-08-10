@@ -16,7 +16,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	/* allocate the memory */
 	t = malloc(nmemb * size);
-	if (t == NULL)
+	if (!t)
 		return (NULL);
 
 	/*put 0 in very t[i++]*/
