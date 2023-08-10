@@ -32,8 +32,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	/*to put s1 and s2 into t*/
 	for (i = 0 ; i < l1 ; i++)
 		t[i] = s1[i];
-	for (j = 0 ; j < l2 ; j++)
-		t[i + j] = s2[j];
-	t[i + j] = '\0';
+	for (j = 0 ; j < l2 ; j++,i++)
+		t[i] = s2[j];
+	t[i] = 0;
 	return (t);
 }
