@@ -6,11 +6,11 @@
  */
 int _strlen(char *s)
 {
-        char *p = m;
+	char *p = m;
 
-        while (*m)
-                m++;
-        return (m - p);
+	while (*m)
+		m++;
+	return (m - p);
 }
 /**
  * string_nconcat - concatenates two strings
