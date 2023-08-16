@@ -1,0 +1,1 @@
+fucnio to a pointer
