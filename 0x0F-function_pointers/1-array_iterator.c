@@ -6,16 +6,12 @@
  * @action: Pointer to the function to be applied
  */
 
-int int_index(int *array, int size, int (*cmp)(int))
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	int i;
 
-	if (array && size && cmp)
-		for (i = 0 ; i < size ; i++)
-		{
-			if (cmp(array[i]))
-				return (i);
-		}
-
-	return (-1);
+	if (!array || !action)
+		return;
+	for (i = 0; i < size; i++)
+		action(array[i]);
 }
