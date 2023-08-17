@@ -9,10 +9,15 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list args;
-	unsigned int i = 0;
+	int i = 0;
 
 	va_start(args, n);
 
+	if (!n)
+        {
+                printf("\n");
+                return;
+        }
 	for (; i < n ; i++)
 	{
 		int x = va_arg(args, int);
