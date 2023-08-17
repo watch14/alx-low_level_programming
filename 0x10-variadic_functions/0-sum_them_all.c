@@ -4,7 +4,8 @@
  * @n: The number of arguments passed to the function.
  * @...: The variable arguments.
  *
- * Return: The sum of the variable arguments.
+ *  Return: If n == 0 - 0.
+ *         Otherwise - the sum of all parameters.
  */
 
 int sum_them_all(const unsigned int n, ...)
@@ -13,8 +14,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_start(args, n);
 
-	int sum = 0;
-	int i;
+	int sum = 0, i;
 
 	if (n == 0)
 		return (0);
