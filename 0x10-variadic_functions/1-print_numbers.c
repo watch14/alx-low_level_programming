@@ -1,10 +1,9 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - Prints a variable number of integers separated by a given separator.
+ * print_numbers - Prints a variable number of integers separated byseparator.
  * @separator: The string to be used as separator between numbers.
  * @n: The number of integers to be printed.
- * ...: A variable number of integer arguments.
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -17,6 +16,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	for (; i < n ; i++)
 	{
 		int x = va_arg(args, int);
+
 		printf("%d", x);
 
 		if (i < n - 1)
