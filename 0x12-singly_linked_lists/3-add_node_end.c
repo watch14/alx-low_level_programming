@@ -7,34 +7,37 @@
  *
  * Return: pointer to the new node
  */
-
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *last, *curent;
+	list_t *new_node, *current;
 
-	last = malloc(sizeof(list_t));
-	if (last == NULL)
+	if (str == NULL)
 		return (NULL);
 
-	last->str = strdup(str);
-	last->len = strlen(last->str);
-	last->next = NULL;
+	new_node = malloc(sizeof(list_t));
+	if (new_node == NULL)
+		return (NULL);
 
-	if (last->str == NULL)
+	new_node->str = strdup(str);
+	if (new_node->str == NULL)
 	{
-		free(last);
+		free(new_node);
 		return (NULL);
 	}
+
+	new_node->len = strlen(new_node->str);
+	new_node->next = NULL;
 
 	if (*head == NULL)
 	{
-		*head = last;
-		return (last);
+		*head = new_node;
+		return (new_node);
 	}
-	curent = *head;
-	while (curent->next != NULL)
-		curent = curent->next;
 
-	curent->next = last;
-	return (last);
+	current = *head;
+	while (current->next)
+		current = current->next;
+
+	current->next = new_node;
+	return (new_node);
 }
