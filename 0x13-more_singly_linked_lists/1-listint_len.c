@@ -6,14 +6,13 @@
  *
  * Return: The number of elements in the linked list.
  */
-
 size_t listint_len(const listint_t *h)
 {
 
 	int i = 0;
-	const listint_t *curent = h;
+	const listint_t *current = h;
 
-	while (curent.n != NULL)
+	while (current != NULL)
 	{
 		current = current->next;
 		i++;
