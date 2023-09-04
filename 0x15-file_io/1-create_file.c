@@ -25,10 +25,15 @@ int create_file(const char *filename, char *text_content)
 	if (f < 0)
 		return (-1);
 
-	if (write(fd, text_content, len) == -1)
+	if (text_content != NULL)
 	{
-		close(fd);
-		return (-1);
+		ssize_t bytes_written = write(f, text_content, len);
+
+		if (bytes_written == -1)
+		{
+			close(f);
+			return (-1);
+		}
 	}
 
 	close(f);
