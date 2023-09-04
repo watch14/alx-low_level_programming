@@ -21,12 +21,12 @@ int create_file(const char *filename, char *text_content)
 		len++;
 	}
 
-	f = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+	f = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 	if (f < 0)
 		return (-1);
 
 	f = write(f, text_content, len);
-	if (d < 0)
+	if (f < 0)
 		return (-1);
 
 	close(f);
