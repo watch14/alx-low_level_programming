@@ -9,24 +9,28 @@
  *         Otherwise - 1.
  */
 
+
 int create_file(const char *filename, char *text_content)
 {
-	int f1, f2, len = 0;
+	int f, len;
 
 	if (filename == NULL)
 		return (-1);
-
-	while (text_content[len] != '\0')
+	len = 0;
+	if (text_content != NULL)
 	{
-		len++;
+		for (len = 0; text_content[len];)
+			len++;
 	}
 
-	f1 = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	f2 = write(f1, text_content, len);
-
-	if (f1 == -1 || f2 == -1)
+	f = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+	if (f < 0)
 		return (-1);
 
-	close(f1);
+	f = write(f, text_content, len);
+	if (f < 0)
+		return (-1);
+
+	close(f);
 	return (1);
 }
