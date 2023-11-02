@@ -1,5 +1,6 @@
 #include "hash_tables.h"
 
+
 /**
  * hash_table_set - Add a key-value pair to the hash table
  * @ht: The hash table
@@ -35,6 +36,24 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		temp = temp->next;
 	}
 
+	hash_n = new_node(key, value);
+
+	hash_n->next = ht->array[index];
+	ht->array[index] = hash_n;
+	return (1);
+}
+
+/**
+ * new_node - Create a new hash node with the given key and value
+ * @key: The key to add
+ * @value: The value to associate with the key
+ *
+ * Return: A pointer to the newly created hash node, or NULL on failure.
+ */
+
+hash_node_t *new_node(const char *key, const char *value)
+{
+	hash_node_t *hash_n;
 
 	hash_n = malloc(sizeof(hash_node_t));
 	if (!hash_n)
@@ -54,7 +73,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		free(hash_n);
 		return (NULL);
 	}
-	hash_n->next = ht->array[index];
-	ht->array[index] = hash_n;
-	return (1)
+
+	return (hash_n);
 }
